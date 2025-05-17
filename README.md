@@ -2,8 +2,6 @@
 
 Wg-Knot is a relay program that lets two WireGuard peers behind NAT exchange traffic **without decrypting it en route**. Because it speaks the native WireGuard protocol, no changes are required on the peers themselves.
 
----
-
 ## Usage
 
 ```bash
@@ -16,8 +14,6 @@ cp setting.conf.example setting.conf
 # Run
 ./wg-knot
 ```
-
----
 
 ## Configuration
 
@@ -53,7 +49,7 @@ Start with `setting.conf.example` and adjust it to your needs.
 
    Minimal `setting.conf`:
 
-   ```toml
+   ```
    [server]
    port = <port where Wg-Knot listens>
 
@@ -150,7 +146,7 @@ cp setting.conf.example setting.conf
 
    最小構成の `setting.conf`:
 
-   ```toml
+   ```
    [server]
    port = <Wg-Knot が待ち受けるポート>
 
