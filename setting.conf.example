@@ -1,0 +1,17 @@
+# wg-knot Server Configuration
+
+# Server Basic Configuration
+[server]
+listen_address = "0.0.0.0"
+port = 52820
+log_level = "info"  # one of: debug, info, warning, error
+
+# Public Key Pair Configuration
+[[keypairs]]
+key1 = "<peer A public key>"
+key2 = "<peer B public key"
+
+# Additional Public Key Pair Configuration
+# [[keypairs]]
+# key1 = "<PublicKey>"
+# key2 = "<PublicKey>"
