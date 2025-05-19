@@ -71,7 +71,7 @@ Start with `setting.conf.example` and adjust it to your needs.
    [Peer]
    PublicKey  = <peer B public key>
    Endpoint   = <Wg-Knot server IP>:<Wg-Knot port>
-   AllowedIPs = 10.0.0.0/24
+   AllowedIPs = 10.0.0.2/32
    PersistentKeepalive = 25
    ```
 
@@ -80,7 +80,7 @@ Start with `setting.conf.example` and adjust it to your needs.
    ```ini
    [Interface]
    PrivateKey = <peer B private key>
-   Address    = 10.0.0.2/24
+   Address    = 10.0.0.2/32
 
    [Peer]
    PublicKey  = <peer A public key>
@@ -168,7 +168,7 @@ cp setting.conf.example setting.conf
    [Peer]
    PublicKey  = <ピア B の公開鍵>
    Endpoint   = <Wg-Knot サーバ IP>:<Wg-Knot ポート>
-   AllowedIPs = 10.0.0.0/24
+   AllowedIPs = 10.0.0.2/32
    PersistentKeepalive = 25
    ```
 
@@ -177,7 +177,7 @@ cp setting.conf.example setting.conf
    ```ini
    [Interface]
    PrivateKey = <ピア B の秘密鍵>
-   Address    = 10.0.0.2/24
+   Address    = 10.0.0.2/32
 
    [Peer]
    PublicKey  = <ピア A の公開鍵>
